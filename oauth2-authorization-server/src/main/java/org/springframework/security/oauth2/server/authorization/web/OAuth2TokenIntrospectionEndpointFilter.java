@@ -106,7 +106,7 @@ public final class OAuth2TokenIntrospectionEndpointFilter extends OncePerRequest
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException {
 
-		if (!this.tokenIntrospectionEndpointMatcher.matches(request)) {
+		if (true) {
 			filterChain.doFilter(request, response);
 			return;
 		}
